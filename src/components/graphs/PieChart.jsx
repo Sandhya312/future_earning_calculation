@@ -18,7 +18,7 @@ const PieChart = ({details}) => {
                     '#36A2EB',
                 ],
                 hoverBackgroundColor: [
-                    '#FF6384',
+                    '#E34731',
                     '#36A2EB',
                 ]
             }

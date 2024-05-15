@@ -14,7 +14,7 @@ const PieChart = ({details}) => {
             {
                 data: [details.loanAmt,calculateInterest(Number(details.loanAmt),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod))],
                 backgroundColor: [
-                    '#FF6384',
+                    '#E34731',
                     '#36A2EB',
                 ],
                 hoverBackgroundColor: [

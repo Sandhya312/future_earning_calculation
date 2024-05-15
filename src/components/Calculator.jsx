@@ -24,7 +24,7 @@ const Calculator = () => {
 
 
     return (
-        <Box mt = "4rem" bg = "white" p = "2rem" w = {{base: "100%", md: "80%"}} rounded = "20px" pb= "3rem"> 
+        <Box mt = "4rem" bg = "white" p = "2rem" w = {{base: "100%", md: "80%"}} rounded = "1rem" pb= "3rem"> 
             <Heading mb = "5rem" textAlign= "center" fontSize= "2rem" fontWeight= "500">Future Earning Calculator</Heading>
             <Flex flexWrap= "wrap" gap = "2rem">
                 <Flex direction= "column" w = {{base:"100%" , lg: "40%"}} gap = "2rem" >

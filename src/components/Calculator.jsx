@@ -162,7 +162,6 @@ const Calculator = () => {
             </Box>
                     <Box mt = "3rem">
                         <PieChart details = {details}/>
-                        <Text textAlign= "center" fontWeight= "500" color = "slategray" mt = "2rem">Graph Representation <br /> Of <br/>Loan and Interest</Text>
                     </Box>
                 </Flex>
             </Flex>

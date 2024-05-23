@@ -12,7 +12,7 @@ const PieChart = ({details}) => {
         labels: ["Principal Amount", "Total Interest"],
         datasets: [
             {
-                data: [details.loanAmt,calculateInterest(Number(details.loanAmt),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod))],
+                data: [details.loanAmount,calculateInterest(Number(details.loanAmount),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod))],
                 backgroundColor: [
                     '#E34731',
                     '#36A2EB',

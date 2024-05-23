@@ -9,18 +9,18 @@ import { convertNum } from '../utils/convertNumber'
 const Calculator = () => {
 
     const [details,setDetails] = useState({
-        loanAmt: 100000,
+        loanAmount: 100000,
+        annualSalary: 100000,
         interest: 1,
         loanDuration: 1,
         courseDuration: 1,
         gracePeriod: 1,
-        annualSalary: 100000,
         years: 5
     })
 
-    const emi = calculateEmi(Number(details.loanAmt),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod));
-    const interest = calculateInterest(Number(details.loanAmt),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod));
-    const total = totalAmount(Number(details.loanAmt),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod));
+    const emi = calculateEmi(Number(details.loanAmount),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod));
+    const interest = calculateInterest(Number(details.loanAmount),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod));
+    const total = totalAmount(Number(details.loanAmount),Number(details.interest),Number(details.loanDuration),Number(details.courseDuration),Number(details.gracePeriod));
 
 
     return (
@@ -30,8 +30,8 @@ const Calculator = () => {
                 <Flex direction= "column" w = {{base:"100%" , lg: "40%"}} gap = "2rem" >
                     <Box p = "1rem 2rem" shadow= "#E34731" rounded = "10px">
                         <InputField 
-                        details = {details.loanAmt}
-                        objKey = "loanAmt" 
+                        details = {details.loanAmount}
+                        objKey = "loanAmount" 
                         setDetails = {setDetails} 
                         loan = {true} 
                         text = "₹" 
@@ -146,7 +146,7 @@ const Calculator = () => {
                         <Box>
                             <Container>
                                 <Text color = "slategrey">Principal Amount</Text>
-                                <Text>₹ {convertNum(details.loanAmt)}</Text>
+                                <Text>₹ {convertNum(details.loanAmount)}</Text>
                             </Container>
                             <Container mt= "2rem">
                                 <Text color = "slategrey">Total Interest</Text>
